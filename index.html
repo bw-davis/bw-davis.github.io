@@ -4,7 +4,8 @@
     <title>bw-davis</title>
     	<style>
   			body {
-
+  				font-family: arial;
+  				background-color: #808080;
   			}
     		h1 { 
     			color: black;
@@ -14,18 +15,67 @@
     			color: black;
     			text-align: left;
     		}
+    		#header {
+			    list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    overflow: hidden;
+			    background-color: #333333;
+			}
+
+			li a {
+			    float: left;
+			}
+
+			li a {
+			    display: block;
+			    color: white;
+			    text-align: center;
+			    padding: 16px;
+			    text-decoration: none;
+			}
+
+			li a:hover {
+			    background-color: #111111;
+			}
     	</style>
   </head>
-  <body style="background-color: powderblue;">
-    <h1>Brian W. Davis</h1>
+  <body>
+  <ul id="header">
+  <li><a href="#aboutMe">About Me</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#education">Education</a></li>
+  <li><a href="#marineCorps">Marine Corps Career</a></li>
+</ul>
+	<
+  	<div style="text-align:center;"><img src="bwdHeadshot.jpg" alt="Brian W. Davis" style="width:150px;height:210px;"></div>
+    <h1>Brian W. Davis</h1><br/>
     <h2> First Paragraph </h2>
     <p title="First Paragraph">My name is Brian Wayne Davis and this is my website.<br/>  I love my wife and my family.</p>
     <br/>
     <hr/>
     <h2> Second Paragraph </h2>
     <p title="Second Paragraph">
-    	I hope you enjoy what I've done here.
-    </p>
+    	I hope you enjoy what I've done here.<br/>
+    	Here is some code: 
+    	<pre>
+		<code>
+		var x = 5;
+		var y = 6;
+		document.getElementById("demo").innerHTML = x + y;
+		</code>
+		</pre>
+    </p><br/><hr/>
+    <h2> Hobbies </h2>
+    <p title="Stuff I like">
+    	<ul style="list-style-type:circle;">
+    		<li>Golf</li>
+    		<li>Singing</li>
+    		<li>Playing Guitar</li>
+    		<li>Videogames</li>
+    	</ul>
+
+    	</p>
     <br/>
     <hr/>
   </body>
