@@ -16,6 +16,9 @@
     			color: black;
     			text-align: left;
     		}
+            div.paragraph {
+                width: 600px;
+            }
     		ul.header {
 			    list-style-type: none;
 			    margin: 0;
@@ -50,6 +53,10 @@
                 from {opacity: 0;}
                 to {opacity: 1;}
             }
+            a:link    {color:blue; background-color:transparent; text-decoration:none}
+            a:visited {color:blue; background-color:transparent; text-decoration:none}
+            a:hover   {color:red; background-color:transparent; text-decoration:underline}
+            a:active  {color:yellow; background-color:transparent; text-decoration:underline}
     	</style>
   </head>
   <body background="grunge_wall.png">
@@ -62,8 +69,8 @@
     <div id="aboutMe" class="data">
       	<div style="text-align:center;"><img src="bwdHeadshot.jpg" alt="Brian W. Davis" style="width:150px;height:210px;border:3px solid white"></div>
         <h1>Brian W. Davis</h1><br/>
-        <h2 id="aboutMe"> First Paragraph </h2>
-        <p title="First Paragraph">My name is Brian Wayne Davis and this is my website.<br/>I love my wife and my family.</p>
+        <h2 id="aboutMe"> About Me </h2>
+        <p title="About Me">My name is Brian Wayne Davis and this is my website.<br/>I love my wife and my family.</p>
         <br/>
         <hr/>
         <h2> Second Paragraph </h2>
@@ -78,7 +85,7 @@
     		</code>
     		</pre> -->
         </p><br/><hr/>
-        <h2 id="education"> Hobbies </h2>
+        <h2> Hobbies </h2>
         <p title="Stuff I like">
         	<ul style="list-style-type:circle;">
         		<li>Golf</li>
@@ -91,16 +98,41 @@
         <hr/>
     </div>
     <div id="projects" class="data">
-        <h2> Another Paragraph </h2>
-        <p title="My Projects">Here's some of my projects</p>
-        <br/><hr/>
+        <h1> Projects </h1>
+        <div class="paragraph">
+        <h2> High Order Calculator Grammar in C </h2>
+            <p title="HOC Grammar">I did a summer research project for the CIS Department Head.  The goal was to take a chapter from
+                Kernighan and Pike's The Unix Programming Environment that covers writing your own grammar and reformat the
+                code.  A lot has changed since the book was written in 1984 and there hasn't been any updates to the book.
+                Hence, the code in it's current form wouldn't compile or run properly.  The language created is called high order 
+                calculator but it in fact is fully functional, statically allocated, call by value language.  Here is a <a href="https://github.com/bw-davis/hoc/tree/master/hoc6" target="_blank">link</a> to 
+                the github repository.  The YACC grammar is in hoc.y and all of the other files I created to hold the supporting functions required for the language to operate.
+            </p>
+        <br/></div><hr/>
     </div>
     <div id="myEducation" class="data">
-        <h2> Education </h2>
-        <p>I am a student at the U of O</p>
-        <br/><hr/>
+        <h1> Education </h1>
+        <h2> University of Oregon </h2>
+            <p>
+                I am currently a senior at the University of Oregon majoring in Computer and Information Science<br/>
+                I started college while I was still in the Marine Corps taking courses at San Diego Community College.<br/>
+                After I was honorably discharged I attended Lane Community College until I transferred to the UofO for my<br/>
+                junior year.  I have a cummulative G.P.A. of 3.61.
+            </p><br/><hr/>
+        <h2> Skills </h2>
+            <p title="CIS Skills">
+            <ul style="list-style-type:circle;">
+                <li>C/C++</li>
+                <li>Java</li>
+                <li>Swift/iOS Development</li>
+                <li>Unity</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+            </ul>
+            </p>
     </div>
     <div id="marineCorps" class="data">
+        <h1> University of Oregon </h1>
         <h2 id="marineCorps"> Marine Corps Career </h2>
         <p title="Marine Corps">I was in the Marine Corps for awhile</p>
         <br/><hr/>
@@ -108,8 +140,6 @@
 
     <script>
         function displayTab(evt, name) {
-            console.log(evt);
-            console.log(name);
             var i, tab, data;
             data = document.getElementsByClassName("data");
             for (i=0; i<data.length; i++) {
