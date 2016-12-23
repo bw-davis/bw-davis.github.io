@@ -16,6 +16,9 @@
     			color: black;
     			text-align: left;
     		}
+            p.paragraph {
+                width: 600px;
+            }
             div.paragraph {
                 width: 600px;
             }
@@ -63,54 +66,57 @@
   	<ul class="header">
 	  <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'aboutMe')" id="defaultOpen">About Me</a></li>	
 	  <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'projects')">Projects</a></li>
-	  <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'myEducation')">Education</a></li>
+	  <!-- <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'myEducation')">Education</a></li> -->
 	  <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'marineCorps')">Marine Corps Career</a></li>
 	</ul><br/>
     <div id="aboutMe" class="data">
       	<div style="text-align:center;"><img src="bwdHeadshot.jpg" alt="Brian W. Davis" style="width:150px;height:210px;border:3px solid white"></div>
         <h1>Brian W. Davis</h1><br/>
-        <h2 id="aboutMe"> About Me </h2>
-        <p title="About Me">My name is Brian Wayne Davis and this is my website.<br/>I love my wife and my family.</p>
+        <h2 id="aboutMe"> Bio </h2>
+        <p title="About Me" class="paragraph">My name is Brian Wayne Davis and this is my website.  I love my wife, my family, and my two dogs.  In 2004 I joined the United States Marine Corps as a helicopter crew chief.  When I wasn't deployed or on a training assignment, I was blessed to be stationed in sunny San Diego until I was honorably discharged in 2013.  I am a hard working, self motivated, highly professional individual who is currently looking for a job in the field of computer science.  My hobbies include golf, coding, and playing video games.</p>
         <br/>
         <hr/>
-        <h2> Second Paragraph </h2>
-        <p title="Second Paragraph">
-        	I hope you enjoy what I've done here.<br/>
-        	Here is some code: 
-        	<!-- <pre>
-    		<code>
-    		var x = 5;
-    		var y = 6;
-    		document.getElementById("demo").innerHTML = x + y;
-    		</code>
-    		</pre> -->
-        </p><br/><hr/>
-        <h2> Hobbies </h2>
-        <p title="Stuff I like">
-        	<ul style="list-style-type:circle;">
-        		<li>Golf</li>
-        		<li>Singing</li>
-        		<li>Playing Guitar</li>
-        		<li>Videogames</li>
-        	</ul>
-        	</p>
-        <br/>
-        <hr/>
+        <div class="paragraph">
+            <h2> Education </h2>
+                <p>
+                    I am currently a senior at the University of Oregon majoring in Computer and Information Science
+                    I started college while I was still in the Marine Corps taking courses at San Diego Community College.
+                    After I was discharged I attended Lane Community College until I transferred to the U of O for my
+                    junior year.  I have a cumulative G.P.A. of 3.61.
+                </p><br/></div>
+            <hr/>
+        <h2> Skills </h2>
+            <p title="Stuff I like">
+            	<ul style="list-style-type:circle;">
+            		<li>C/C++</li>
+                    <li>Java</li>
+                    <li>Swift/iOS Development</li>
+                    <li>Unity</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+            	</ul>
+            </p><br/><hr/>
     </div>
     <div id="projects" class="data">
         <h1> Projects </h1>
         <div class="paragraph">
-        <h2> High Order Calculator Grammar in C </h2>
-            <p title="HOC Grammar">I did a summer research project for the CIS Department Head.  The goal was to take a chapter from
-                Kernighan and Pike's The Unix Programming Environment that covers writing your own grammar and reformat the
-                code.  A lot has changed since the book was written in 1984 and there hasn't been any updates to the book.
-                Hence, the code in it's current form wouldn't compile or run properly.  The language created is called high order 
-                calculator but it in fact is fully functional, statically allocated, call by value language.  Here is a <a href="https://github.com/bw-davis/hoc/tree/master/hoc6" target="_blank">link</a> to 
-                the github repository.  The YACC grammar is in hoc.y and all of the other files I created to hold the supporting functions required for the language to operate.
-            </p>
-        <br/></div><hr/>
+            <h2> High Order Calculator Grammar in C </h2>
+                <p title="HOC Grammar">
+                    I did a summer research project for the CIS Department Head at the U of O.  The goal was to take a chapter from
+                    Kernighan and Pike's The Unix Programming Environment that covers  grammar and reformat the
+                    code.  A lot has changed since the book was written in 1984 and there hasn't been any updates to the book.
+                    Hence, the code in it's current form wouldn't compile or run properly.  The language created is called high order 
+                    calculator but it in fact is fully functional, statically allocated, call by value language.  Here is a <a href="https://github.com/bw-davis/hoc/tree/master/hoc6" target="_blank">link</a> to the github repository.  The YACC grammar is in hoc.y and all of the other files I created to hold the supporting functions required for the language to operate.
+                </p>
+            <br/></div><hr/>
+        <div class="paragraph">
+            <h2> Student Athlete Mental Health </h2>
+                <p title="Mental Health App">
+                    Three friends and myself competed in the Hackathon 2016 competition and won in the category of Hack Harassment.  We made an iOS app that for student athletes that would track their mood, level of activity, diet, sleep, etc. via a questionnaire.  They would take the survey every day and it would show them trends in their daily routine that equate to their overall mood being better.  The goal is to allow the athlete to be more in tune with their emotional well being and be able to create healthy habits.  Here is a <a href="https://github.com/bw-davis/hackathon2016/tree/master/Hackathon2016" target="_blank">link</a> to the github repository.
+                </p>
+            <br/></div>
     </div>
-    <div id="myEducation" class="data">
+    <!-- <div id="myEducation" class="data">
         <h1> Education </h1>
         <h2> University of Oregon </h2>
             <p>
@@ -130,12 +136,15 @@
                 <li>HTML</li>
             </ul>
             </p>
-    </div>
+    </div> -->
     <div id="marineCorps" class="data">
-        <h1> University of Oregon </h1>
-        <h2 id="marineCorps"> Marine Corps Career </h2>
-        <p title="Marine Corps">I was in the Marine Corps for awhile</p>
-        <br/><hr/>
+        <h1> Marine Corps Career </h1>
+            <p class="paragraph">
+                I joined the Marines in 2004 as a Boeing CH-46E helicopter crewchief.  As a crewchief I was responsible for performing pre-flight inspections on the aircraft to ensure that they are safe to fly.  Then during the flight mission, I would man the weapons systems, clear the aircraft for left and right turns, perform in-flight inspections, as well as load and unload all of the cargo or passengers we took on during the flight.  While I wasn't flying I would perform routine maintenance on the helicopters that weren't flying that day.  I had to be intimately knowledgeable about the innerworkings of all the helicopter's systems in order to properly troubleshoot issues.
+            </p><br/><hr/>
+            <p class="paragraph">
+                As I gained in experience I also gained qualifications; such as, Night Systems Instructor, Weapons Instructor, Plane Captain, Collateral Duty Inspector and Quality Assurance Inspector.  I was meritoriously promoted to the ranks of lance corporal, corporal and sergeant and was promoted above all of my peers to the rank of staff sergeant within 6 years.  That is the rank I held until I was honorably discharged in 2013.
+            </p><br/><hr/>
     </div>
 
     <script>
@@ -151,8 +160,7 @@
             }
             document.getElementById(name).style.display = "block";
             evt.currentTarget.className += " active";
-        }
-        
+        }  
     </script>
     <script>
         document.getElementById("defaultOpen").click();
