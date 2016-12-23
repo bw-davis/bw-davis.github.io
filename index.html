@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <title>bw-davis</title>
-    <meta name="keywords" content="developer, C, C++, Java, ios, brian, wayne, davis, university of oregon, marine, corps">
+    <meta name="keywords" content="developer, C, C++, Java, ios, brian, wayne, davis, university of oregon, marine, corps, experience">
     	<style>
   			body {
 	  			font-family: arial;
@@ -16,15 +16,14 @@
     			color: black;
     			text-align: left;
     		}
-    		#header {
+    		ul.header {
 			    list-style-type: none;
 			    margin: 0;
 			    padding: 0;
 			    overflow: hidden;
 			    background-color: #333;
 			}
-			
-			li a {
+			ul.header li a {
 				float: left;
 			    display: block;
 			    color: white;
@@ -32,47 +31,101 @@
 			    padding: 16px;
 			    text-decoration: none;
 			}
-
-			li a:hover {
+			ul.header li a:hover {
 			    background-color: #111;
 			}
+            ul.header li a:focus, .active {
+                background-color: #111
+            }
+            .data {
+                display: none;
+               -webkit-animation: fadeEffect 1.5s;
+               animation: fadeEffect 1.5s;
+            }
+            @-webkit-keyframes fadeEffect {
+                from {opacity: 0;}
+                to {opacity: 1;}
+            }
+            @keyframes fadeEffect {
+                from {opacity: 0;}
+                to {opacity: 1;}
+            }
     	</style>
   </head>
   <body background="grunge_wall.png">
-  	<ul id="header">
-	  <li><a href="#aboutMe">About Me</a></li>	<!-- do inline -->
-	  <li><a href="#projects">Projects</a></li>
-	  <li><a href="#education">Education</a></li>
-	  <li><a href="#marineCorps">Marine Corps Career</a></li>
+  	<ul class="header">
+	  <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'aboutMe')" id="defaultOpen">About Me</a></li>	
+	  <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'projects')">Projects</a></li>
+	  <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'myEducation')">Education</a></li>
+	  <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'marineCorps')">Marine Corps Career</a></li>
 	</ul><br/>
-  	<div style="text-align:center;"><img src="bwdHeadshot.jpg" alt="Brian W. Davis" style="width:150px;height:210px;border:3px solid white"></div>
-    <h1>Brian W. Davis</h1><br/>
-    <h2 id="aboutMe"> First Paragraph </h2>
-    <p title="First Paragraph">My name is Brian Wayne Davis and this is my website.<br/>I love my wife and my family.</p>
-    <br/>
-    <hr/>
-    <h2> Second Paragraph </h2>
-    <p title="Second Paragraph">
-    	I hope you enjoy what I've done here.<br/>
-    	Here is some code: 
-    	<!-- <pre>
-		<code>
-		var x = 5;
-		var y = 6;
-		document.getElementById("demo").innerHTML = x + y;
-		</code>
-		</pre> -->
-    </p><br/><hr/>
-    <h2 id="education"> Hobbies </h2>
-    <p title="Stuff I like">
-    	<ul style="list-style-type:circle;">
-    		<li>Golf</li>
-    		<li>Singing</li>
-    		<li>Playing Guitar</li>
-    		<li>Videogames</li>
-    	</ul>
-    	</p>
-    <br/>
-    <hr/>
+    <div id="aboutMe" class="data">
+      	<div style="text-align:center;"><img src="bwdHeadshot.jpg" alt="Brian W. Davis" style="width:150px;height:210px;border:3px solid white"></div>
+        <h1>Brian W. Davis</h1><br/>
+        <h2 id="aboutMe"> First Paragraph </h2>
+        <p title="First Paragraph">My name is Brian Wayne Davis and this is my website.<br/>I love my wife and my family.</p>
+        <br/>
+        <hr/>
+        <h2> Second Paragraph </h2>
+        <p title="Second Paragraph">
+        	I hope you enjoy what I've done here.<br/>
+        	Here is some code: 
+        	<!-- <pre>
+    		<code>
+    		var x = 5;
+    		var y = 6;
+    		document.getElementById("demo").innerHTML = x + y;
+    		</code>
+    		</pre> -->
+        </p><br/><hr/>
+        <h2 id="education"> Hobbies </h2>
+        <p title="Stuff I like">
+        	<ul style="list-style-type:circle;">
+        		<li>Golf</li>
+        		<li>Singing</li>
+        		<li>Playing Guitar</li>
+        		<li>Videogames</li>
+        	</ul>
+        	</p>
+        <br/>
+        <hr/>
+    </div>
+    <div id="projects" class="data">
+        <h2> Another Paragraph </h2>
+        <p title="My Projects">Here's some of my projects</p>
+        <br/><hr/>
+    </div>
+    <div id="myEducation" class="data">
+        <h2> Education </h2>
+        <p>I am a student at the U of O</p>
+        <br/><hr/>
+    </div>
+    <div id="marineCorps" class="data">
+        <h2 id="marineCorps"> Marine Corps Career </h2>
+        <p title="Marine Corps">I was in the Marine Corps for awhile</p>
+        <br/><hr/>
+    </div>
+
+    <script>
+        function displayTab(evt, name) {
+            console.log(evt);
+            console.log(name);
+            var i, tab, data;
+            data = document.getElementsByClassName("data");
+            for (i=0; i<data.length; i++) {
+                data[i].style.display = "none";
+            }
+            tab = document.getElementsByClassName("tab");
+            for (i=0; i<tab.length; i++) {
+                tab[i].className = tab[i].className.replace(" active", "");
+            }
+            document.getElementById(name).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        
+    </script>
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
   </body>
 </html>
