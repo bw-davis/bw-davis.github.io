@@ -8,19 +8,24 @@
 	  			font-family: arial;
 	  			color: black;
   			}
+            blockquote {
+                width: 700px;
+            }
     		h1 { 
     			color: black;
     			text-align: center;
     			font-style: bold; }
     		h2 {
     			color: black;
-    			text-align: left;
+    			text-align: center;
     		}
             p.paragraph {
-                width: 600px;
+                margin: auto;
+                width: 700px;
             }
             div.paragraph {
-                width: 600px;
+                margin: auto;
+                width: 700px;
             }
     		ul.header {
 			    list-style-type: none;
@@ -73,8 +78,12 @@
       	<div style="text-align:center;"><img src="bwdHeadshot.jpg" alt="Brian W. Davis" style="width:150px;height:210px;border:3px solid white"></div>
         <h1>Brian W. Davis</h1><br/>
         <h2 id="aboutMe"> Bio </h2>
-        <p title="About Me" class="paragraph">My name is Brian Wayne Davis and this is my website.  I love my wife, my family, and my two dogs.  In 2004 I joined the United States Marine Corps as a helicopter crew chief.  When I wasn't deployed or on a training assignment, I was blessed to be stationed in sunny San Diego until I was honorably discharged in 2013.  I am a hard working, self motivated, highly professional individual who is currently looking for a job in the field of computer science.  My hobbies include golf, coding, and playing video games.</p>
-        <br/>
+        <div class="paragraph">
+            <p title="About Me">
+                My name is Brian Davis and this is my website. I am a self-motivated, highly professional individual who is seeking a career in web development.<br/><br/>
+                After graduating high school and deciding I needed a change of scenery, I joined the U.S. Marine Corps as a helicopter crew chief on the Boeing CH-46E. When I re-enlisted, I transferred to the V-22 Osprey. I was blessed to be stationed in sunny San Diego when I wasn’t deployed or on a training assignment. More details about my experience in the service can be found on the “Marine Corps Career” page. After being honorably discharged in 2013, my family and I moved to Oregon to finish my schooling and begin my life as a civilian.<br/><br/>
+                I have been married to my wife, Amanda Davis, for 7 years. We have two small dogs, Lucy and Leonard, and a horse, Sara. I currently live in Springfield, Oregon. 
+                </p><br/></div>
         <hr/>
         <div class="paragraph">
             <h2> Education </h2>
@@ -85,6 +94,7 @@
                     junior year.  I have a cumulative G.P.A. of 3.61.
                 </p><br/></div>
             <hr/>
+        <div class="paragraph">
         <h2> Skills </h2>
             <p title="Stuff I like">
             	<ul style="list-style-type:circle;">
@@ -95,7 +105,7 @@
                     <li>JavaScript</li>
                     <li>HTML</li>
             	</ul>
-            </p><br/><hr/>
+            </p><br/></div><hr/>
     </div>
     <div id="projects" class="data">
         <h1> Projects </h1>
@@ -139,12 +149,28 @@
     </div> -->
     <div id="marineCorps" class="data">
         <h1> Marine Corps Career </h1>
-            <p class="paragraph">
-                I joined the Marines in 2004 as a Boeing CH-46E helicopter crewchief.  As a crewchief I was responsible for performing pre-flight inspections on the aircraft to ensure that they are safe to fly.  Then during the flight mission, I would man the weapons systems, clear the aircraft for left and right turns, perform in-flight inspections, as well as load and unload all of the cargo or passengers we took on during the flight.  While I wasn't flying I would perform routine maintenance on the helicopters that weren't flying that day.  I had to be intimately knowledgeable about the innerworkings of all the helicopter's systems in order to properly troubleshoot issues.
-            </p><br/><hr/>
-            <p class="paragraph">
-                As I gained in experience I also gained qualifications; such as, Night Systems Instructor, Weapons Instructor, Plane Captain, Collateral Duty Inspector and Quality Assurance Inspector.  I was meritoriously promoted to the ranks of lance corporal, corporal and sergeant and was promoted above all of my peers to the rank of staff sergeant within 6 years.  That is the rank I held until I was honorably discharged in 2013.
-            </p><br/><hr/>
+            <div class="paragraph">
+                <h2> Summary </h2>
+                <p class="paragraph">
+                    I joined the Marines in 2004 as a Boeing Ch-46E helicopter crew chief. As a crew chief, I was responsible for performing pre-flight inspections, ensuring the aircraft was safe to fly. During flight, I would man the weapons systems, assist pilots in navigation, safe flight operation, perform in-flight maintenance/testing, and load or unload cargo or passengers. When I wasn’t flying, I was busy managing and mentoring a crew of up to 40 junior Marines, ensuring maintenance tasks were being performed according to Quality Assurance standards, and troubleshooting complex aircraft systems. I often worked with other maintenance departments to coordinate maintenance and ensure squadron goals were being met. 
+                </p>
+                <p>
+                    I was meritoriously promoted three times and attained the rank of Staff Sergeant    (E-6) far ahead of my peers. On an annual performance review, my direct superior wrote:
+                    <blockquote>
+                        <i>“I recommend that Sgt. Davis be considered for promotion ahead of contemporaries. A hard working and diligent NCO of the highest intelligence, Sgt. Davis has set the example that all other CH-46E crew chiefs should emulate … He is personally responsible for helping one of his Marines beat an alcohol addiction. His superior technical knowledge and unrelenting efforts helped ensure the health of the squadron and the proficiency of the Flightline Section. His drive for professional development goes far beyond that of his peers … Sgt. Davis represents the very best of the NCO ranks.” –Captain Jess Springfield</i> 
+                    </blockquote>
+                </p><br/></div><hr/>
+            <div class="paragraph">
+                <h2> Accomplishments and Awards </h2>
+            <p title="Awards">
+                <ul style="list-style-type:circle;">
+                    <li>3 meritorious promotions in less than 6 years</li>
+                    <li><b>Instructor qualifications:</b> Night Systems, Weapons, and Terrain</li>
+                    <li><b>Medals:</b> 2 Flight Strike, 2 Navy Achievement, 2 Good Conduct, National Defense, Iraqi Campaign, Global War on Terrorism </li>
+                    <li>4 Certificates of Commendation from unit leaders for performing duties in an exemplary manner</li>
+                    <li>1 deployment to Iraq with the 13th Marine Expeditionary Unit (MEU)</li>
+                </ul>
+            </p><br/></div><hr/>
     </div>
 
     <script>
