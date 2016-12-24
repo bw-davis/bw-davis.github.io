@@ -1,0 +1,61 @@
+body {
+	font-family: arial;
+	color: black;
+}
+blockquote {
+    width: 700px;
+}
+h1 { 
+    color: black;
+    text-align: center;
+    font-style: bold; }
+h2 {
+    color: black;
+    text-align: center;
+}
+p.paragraph {
+    margin: auto;
+    width: 700px;
+}
+div.paragraph {
+    margin: auto;
+    width: 700px;
+}
+ul.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+ul.header li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+ul.header li a:hover {
+    background-color: #111;
+}
+ul.header li a:focus, .active {
+    background-color: #111
+}
+.data {
+    display: none;
+    -webkit-animation: fadeEffect 1.5s;
+    animation: fadeEffect 1.5s;
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+a:link    {color:blue; background-color:transparent; text-decoration:none}
+a:visited {color:blue; background-color:transparent; text-decoration:none}
+a:hover   {color:red; background-color:transparent; text-decoration:underline}
+a:active  {color:yellow; background-color:transparent; text-decoration:underline}

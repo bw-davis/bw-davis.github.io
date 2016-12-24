@@ -2,76 +2,13 @@
 <html lang="en-US">
   <head>
     <title>bw-davis</title>
+    <link rel="stylesheet" href="style.css">
     <meta name="keywords" content="developer, C, C++, Java, ios, brian, wayne, davis, university of oregon, marine, corps, experience">
-    	<style>
-  			body {
-	  			font-family: arial;
-	  			color: black;
-  			}
-            blockquote {
-                width: 700px;
-            }
-    		h1 { 
-    			color: black;
-    			text-align: center;
-    			font-style: bold; }
-    		h2 {
-    			color: black;
-    			text-align: center;
-    		}
-            p.paragraph {
-                margin: auto;
-                width: 700px;
-            }
-            div.paragraph {
-                margin: auto;
-                width: 700px;
-            }
-    		ul.header {
-			    list-style-type: none;
-			    margin: 0;
-			    padding: 0;
-			    overflow: hidden;
-			    background-color: #333;
-			}
-			ul.header li a {
-				float: left;
-			    display: block;
-			    color: white;
-			    text-align: center;
-			    padding: 16px;
-			    text-decoration: none;
-			}
-			ul.header li a:hover {
-			    background-color: #111;
-			}
-            ul.header li a:focus, .active {
-                background-color: #111
-            }
-            .data {
-                display: none;
-               -webkit-animation: fadeEffect 1.5s;
-               animation: fadeEffect 1.5s;
-            }
-            @-webkit-keyframes fadeEffect {
-                from {opacity: 0;}
-                to {opacity: 1;}
-            }
-            @keyframes fadeEffect {
-                from {opacity: 0;}
-                to {opacity: 1;}
-            }
-            a:link    {color:blue; background-color:transparent; text-decoration:none}
-            a:visited {color:blue; background-color:transparent; text-decoration:none}
-            a:hover   {color:red; background-color:transparent; text-decoration:underline}
-            a:active  {color:yellow; background-color:transparent; text-decoration:underline}
-    	</style>
   </head>
   <body background="grunge_wall.png">
   	<ul class="header">
 	  <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'aboutMe')" id="defaultOpen">About Me</a></li>	
 	  <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'projects')">Projects</a></li>
-	  <!-- <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'myEducation')">Education</a></li> -->
 	  <li><a href="javascript:void(0)" class="tab" onclick="displayTab(event, 'marineCorps')">Marine Corps Career</a></li>
 	</ul><br/>
     <div id="aboutMe" class="data">
@@ -95,17 +32,17 @@
                 </p><br/></div>
             <hr/>
         <div class="paragraph">
-        <h2> Skills </h2>
-            <p title="Stuff I like">
-            	<ul style="list-style-type:circle;">
-            		<li>C/C++</li>
-                    <li>Java</li>
-                    <li>Swift/iOS Development</li>
-                    <li>Unity</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-            	</ul>
-            </p><br/></div><hr/>
+            <h2> Skills </h2>
+                <p title="Stuff I like">
+                	<ul style="list-style-type:circle;">
+                		<li>C/C++</li>
+                        <li>Java</li>
+                        <li>Swift/iOS Development</li>
+                        <li>Unity</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                	</ul>
+                </p><br/></div><hr/>
     </div>
     <div id="projects" class="data">
         <h1> Projects </h1>
@@ -126,27 +63,6 @@
                 </p>
             <br/></div>
     </div>
-    <!-- <div id="myEducation" class="data">
-        <h1> Education </h1>
-        <h2> University of Oregon </h2>
-            <p>
-                I am currently a senior at the University of Oregon majoring in Computer and Information Science<br/>
-                I started college while I was still in the Marine Corps taking courses at San Diego Community College.<br/>
-                After I was honorably discharged I attended Lane Community College until I transferred to the UofO for my<br/>
-                junior year.  I have a cummulative G.P.A. of 3.61.
-            </p><br/><hr/>
-        <h2> Skills </h2>
-            <p title="CIS Skills">
-            <ul style="list-style-type:circle;">
-                <li>C/C++</li>
-                <li>Java</li>
-                <li>Swift/iOS Development</li>
-                <li>Unity</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-            </ul>
-            </p>
-    </div> -->
     <div id="marineCorps" class="data">
         <h1> Marine Corps Career </h1>
             <div class="paragraph">
@@ -162,15 +78,15 @@
                 </p><br/></div><hr/>
             <div class="paragraph">
                 <h2> Accomplishments and Awards </h2>
-            <p title="Awards">
-                <ul style="list-style-type:circle;">
-                    <li>3 meritorious promotions in less than 6 years</li>
-                    <li><b>Instructor qualifications:</b> Night Systems, Weapons, and Terrain</li>
-                    <li><b>Medals:</b> 2 Flight Strike, 2 Navy Achievement, 2 Good Conduct, National Defense, Iraqi Campaign, Global War on Terrorism </li>
-                    <li>4 Certificates of Commendation from unit leaders for performing duties in an exemplary manner</li>
-                    <li>1 deployment to Iraq with the 13th Marine Expeditionary Unit (MEU)</li>
-                </ul>
-            </p><br/></div><hr/>
+                    <p title="Awards">
+                        <ul style="list-style-type:circle;">
+                            <li>3 meritorious promotions in less than 6 years</li>
+                            <li><b>Instructor qualifications:</b> Night Systems, Weapons, and Terrain</li>
+                            <li><b>Medals:</b> 2 Flight Strike, 2 Navy Achievement, 2 Good Conduct, National Defense, Iraqi Campaign, Global War on Terrorism </li>
+                            <li>4 Certificates of Commendation from unit leaders for performing duties in an exemplary manner</li>
+                            <li>1 deployment to Iraq with the 13th Marine Expeditionary Unit (MEU)</li>
+                        </ul>
+                    </p><br/></div><hr/>
     </div>
 
     <script>
@@ -187,8 +103,6 @@
             document.getElementById(name).style.display = "block";
             evt.currentTarget.className += " active";
         }  
-    </script>
-    <script>
         document.getElementById("defaultOpen").click();
     </script>
   </body>
